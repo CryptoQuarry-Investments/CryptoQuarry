@@ -84,8 +84,8 @@ DATABASES = {
         'NAME': 'CryptoQuarry',
         'USER': 'postgres',
         'PASSWORD': 'pecan',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '192.168.0.22',
+        'PORT': '5432',
     }
 }
 
