@@ -15,13 +15,14 @@ class Cache:
             return False
 
     def set(self, key, data):
+        data = data.copy()
         data['cached_at'] = datetime.now()
         data['cached_data'] = True
 
         self.storage[key] = data
 
     def checkExpiry(self, data, expiry):
-        if data.cached_at:
+        if data['cached_at']:
             time_change_seconds = (datetime.now() - data['cached_at']).total_seconds()
             return expiry < time_change_seconds
         else:

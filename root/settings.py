@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'root',
-    'Backend'
+    'Backend',
+    'Settings',
+    'Tracking',
+    'WAW'
 ]
 
 MIDDLEWARE = [

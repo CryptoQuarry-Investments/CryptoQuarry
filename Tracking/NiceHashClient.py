@@ -1,8 +1,7 @@
 import json
 import math
 import requests
-from .SimpleCache import Cache
-
+from Backend.SimpleCache import Cache
 
 algo_map = [
     'Scrypt',
@@ -65,6 +64,8 @@ class NiceHashClient:
             cache=self.cache
         )
 
+
+
 class _NiceHashGetRequests:
     def __init__(
         self,
@@ -79,7 +80,6 @@ class _NiceHashGetRequests:
         self.cache = cache
         self.formatter = _NiceHashGetResponseFormatter(
             cache=self.cache,
-
         )
 
     @staticmethod
@@ -90,13 +90,13 @@ class _NiceHashGetRequests:
     def ServerMap(expiry=0):
         return server_map
 
-    def ActivityData(self, expiry=0):
+    def ActivityData(self, expiry=300):
         # Check cache for data
         cached_data = False
         if self.cache and expiry > 0:
             cached_data = self.cache.get('activity_data', expiry)
 
-        if cached_data and not cached_data.expired:
+        if cached_data and not cached_data['expired']:
             return cached_data
         else:
             try:
@@ -114,13 +114,13 @@ class _NiceHashGetRequests:
             except json.JSONDecodeError:
                 return cached_data
 
-    def BalanceData(self, expiry=0):
+    def BalanceData(self, expiry=300):
         # Check cache for data
         cached_data = False
         if self.cache and expiry > 0:
             cached_data = self.cache.get('balance_data', expiry)
 
-        if cached_data and not cached_data.expired:
+        if cached_data and not cached_data['expired']:
             return cached_data
         else:
             try:
@@ -174,12 +174,12 @@ class _NiceHashGetResponseFormatter:
             formatted_data[worker[0]].append({
                 'name': worker[0] + ':' + str(seen_names.count(worker[0])),
                 'machine_name': worker[0],
-                'connection_time': worker[2],
+                'active_time': worker[2],
                 'difficulty': worker[4],
-                'server': server,
-                'server_no': worker[5],
-                'algo': algo,
-                'algo_no': worker[6],
+                'server_name': server,
+                'server_id': worker[5],
+                'algorithm_name': algo,
+                'algorithm_id': worker[6],
             })
 
         return formatted_data
@@ -198,8 +198,8 @@ class _NiceHashGetResponseFormatter:
                 total_balance += math.floor(float(algo_data['balance']) * 1e8) / 1e8
 
             algo_results.append({
-                'algo': algo,
-                'algo_no': algo_data['algo'],
+                'algorithm_name': algo,
+                'algorithm_id': algo_data['algo'],
                 'balance': float(algo_data['balance']),
             })
 
