@@ -111,7 +111,7 @@ class _NiceHashGetRequests:
                     self.cache.set('activity_data', data)
 
                 return data
-            except json.JSONDecodeError:
+            except json.decoder.JSONDecodeError:
                 return cached_data
 
     def BalanceData(self, expiry=300):
@@ -135,7 +135,7 @@ class _NiceHashGetRequests:
                     self.cache.set('balance_data', data)
 
                 return data
-            except json.JSONDecodeError:
+            except json.decoder.JSONDecodeError:
                 return cached_data
 
 class _NiceHashGetResponseFormatter:
