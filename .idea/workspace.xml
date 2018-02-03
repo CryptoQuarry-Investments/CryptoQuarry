@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5001665d-57d9-4bed-8a26-30a79d05244f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tracking/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WAW/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WAW/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tracking/views.py" afterPath="$PROJECT_DIR$/Tracking/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WAW/models.py" afterPath="$PROJECT_DIR$/WAW/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WAW/views.py" afterPath="$PROJECT_DIR$/WAW/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/urls.py" afterPath="$PROJECT_DIR$/root/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tracking/NiceHashClient.py" afterPath="$PROJECT_DIR$/Tracking/NiceHashClient.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WAW/serializers.py" afterPath="$PROJECT_DIR$/WAW/serializers.py" />
     </list>
     <ignored path="CryptoQuarry.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,6 +37,31 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="Ticker.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tracking/Ticker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-111">
+                  <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NiceHashClient.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Tracking/NiceHashClient.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#17#0" expanded="true" />
+                    <element signature="e#96#553#0" expanded="false" />
+                    <element signature="e#567#609#0" expanded="false" />
+                    <element signature="e#628#705#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tracking/views.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +74,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tracking/utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2737">
+                  <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WAW/serializers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+                <state relative-caret-position="527">
+                  <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -120,7 +149,7 @@
           <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WAW/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1405">
+                <state relative-caret-position="385">
                   <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
@@ -160,14 +189,14 @@
         <option value="$PROJECT_DIR$/Tracking/Ticker.py" />
         <option value="$PROJECT_DIR$/Tracking/models.py" />
         <option value="$PROJECT_DIR$/Tracking/utils.py" />
-        <option value="$PROJECT_DIR$/Tracking/NiceHashClient.py" />
         <option value="$PROJECT_DIR$/WAW/views.py" />
         <option value="$PROJECT_DIR$/WAW/urls.py" />
         <option value="$PROJECT_DIR$/Tracking/views.py" />
         <option value="$PROJECT_DIR$/root/urls.py" />
         <option value="$PROJECT_DIR$/Tracking/serializers.py" />
-        <option value="$PROJECT_DIR$/WAW/serializers.py" />
         <option value="$PROJECT_DIR$/WAW/models.py" />
+        <option value="$PROJECT_DIR$/WAW/serializers.py" />
+        <option value="$PROJECT_DIR$/Tracking/NiceHashClient.py" />
       </list>
     </option>
   </component>
@@ -501,7 +530,7 @@
           <url>file://$PROJECT_DIR$/Tracking/admin.py</url>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -519,7 +548,7 @@
         <state relative-caret-position="459">
           <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -529,7 +558,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,7 +568,7 @@
         <state relative-caret-position="2737">
           <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,10 +598,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#90#547#0" expanded="false" />
-            <element signature="e#561#603#0" expanded="false" />
-            <element signature="e#622#699#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#96#553#0" expanded="false" />
+            <element signature="e#567#609#0" expanded="false" />
+            <element signature="e#628#705#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -590,7 +619,7 @@
         <state relative-caret-position="459">
           <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,7 +629,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,7 +639,7 @@
         <state relative-caret-position="2737">
           <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,10 +669,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#90#547#0" expanded="false" />
-            <element signature="e#561#603#0" expanded="false" />
-            <element signature="e#622#699#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#96#553#0" expanded="false" />
+            <element signature="e#567#609#0" expanded="false" />
+            <element signature="e#628#705#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -653,10 +682,10 @@
         <state relative-caret-position="2890">
           <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#90#547#0" expanded="false" />
-            <element signature="e#561#603#0" expanded="false" />
-            <element signature="e#622#699#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#96#553#0" expanded="false" />
+            <element signature="e#567#609#0" expanded="false" />
+            <element signature="e#628#705#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,7 +695,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,7 +726,7 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -780,7 +809,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,39 +819,6 @@
         <state relative-caret-position="782">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tracking/Ticker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tracking/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tracking/NiceHashClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#90#547#0" expanded="false" />
-            <element signature="e#561#603#0" expanded="false" />
-            <element signature="e#622#699#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,22 +880,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WAW/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WAW/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="527">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WAW/models.py">
+    <entry file="file://$PROJECT_DIR$/Tracking/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1405">
-          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+        <state relative-caret-position="2737">
+          <caret line="177" column="26" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracking/Ticker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracking/NiceHashClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#96#553#0" expanded="false" />
+            <element signature="e#567#609#0" expanded="false" />
+            <element signature="e#628#705#0" expanded="false" />
           </folding>
         </state>
       </provider>

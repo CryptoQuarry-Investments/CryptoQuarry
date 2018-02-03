@@ -1,4 +1,4 @@
-import json
+import simplejson
 import math
 import requests
 from Backend.SimpleCache import Cache
@@ -111,7 +111,9 @@ class _NiceHashGetRequests:
                     self.cache.set('activity_data', data)
 
                 return data
-            except json.decoder.JSONDecodeError:
+            except requests.exceptions.RequestException:
+                return cached_data
+            except ValueError:
                 return cached_data
 
     def BalanceData(self, expiry=300):
@@ -135,7 +137,9 @@ class _NiceHashGetRequests:
                     self.cache.set('balance_data', data)
 
                 return data
-            except json.decoder.JSONDecodeError:
+            except requests.exceptions.RequestException:
+                return cached_data
+            except ValueError:
                 return cached_data
 
 class _NiceHashGetResponseFormatter:

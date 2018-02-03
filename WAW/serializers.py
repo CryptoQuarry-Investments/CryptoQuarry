@@ -18,6 +18,7 @@ class WorkerSerializer(serializers.HyperlinkedModelSerializer):
 
 class WalletSerializer(serializers.HyperlinkedModelSerializer):
     workers = WorkerSerializer(many=True)
+    latest_reading = serializers.SerializerMethodField()
     current_net_GBP = serializers.SerializerMethodField()
     earning_rate = serializers.SerializerMethodField()
 
@@ -26,11 +27,20 @@ class WalletSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'workers',
             'hidden_address',
+            'GBP_per_BTC',
+            'latest_reading',
             'cumulative_net_GBP',
             'net_earnings',
             'current_net_GBP',
             'earning_rate'
         )
+
+    def get_latest_reading(self, object):
+        try:
+            log = object.balance_history.all().order_by('-timestamp')[0]
+            return log.timestamp.strftime('%H:%M:%S %d %b %Y')
+        except IndexError:
+            return 'No logs yet'
 
     def get_current_net_GBP(self, object):
         return object.inGBP('net_earnings')
